@@ -1,0 +1,21 @@
+.container {
+    background: url('../../assets/desktop/image-hero.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 500px;
+}
+.container-content {
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.title {
+    border: 2px solid var(--clr-white);
+    padding: 2rem;
+    text-transform: uppercase;
+    font: 'Josefin Sans';
+    font-weight: 100;
+    color: white;
+}

@@ -1,0 +1,7 @@
+.footer-container {
+  background-color: var(--clr-black);
+  padding: 2rem;
+}
+.copy {
+  color: var(--clr-white);
+}

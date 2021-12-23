@@ -1,0 +1,14 @@
+.container {
+    background: url('../../assets/desktop/image-hero.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 600px;
+}
+.container-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 5rem;
+
+}

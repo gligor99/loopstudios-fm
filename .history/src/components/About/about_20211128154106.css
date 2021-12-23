@@ -1,0 +1,18 @@
+.about-container {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 5rem;
+}
+
+.image-interactive {
+  height: 80%;
+  z-index: -1;
+}
+.about-content {
+  background-color: var(--clr-white);
+  z-index: 1;
+  height: 80%;
+  padding: 1rem;
+  margin-left: -10rem;
+}

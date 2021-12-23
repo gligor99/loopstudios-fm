@@ -1,0 +1,11 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: auto;
+    padding: 2rem;
+}
+ul{
+    display: flex;
+    justify-content: space-evenly;
+}

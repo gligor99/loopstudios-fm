@@ -1,0 +1,7 @@
+.creation-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 7rem;
+  padding-right: 7rem;
+}

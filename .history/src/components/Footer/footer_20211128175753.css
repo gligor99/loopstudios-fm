@@ -1,0 +1,12 @@
+.footer-container {
+  background-color: var(--clr-black);
+  padding: 2rem 7rem 2rem 7rem;
+  display: flex;
+  justify-content: space-between;
+}
+.copy {
+  color: var(--clr-white);
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+}

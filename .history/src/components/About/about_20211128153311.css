@@ -1,0 +1,10 @@
+.about-container {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 5rem;
+}
+
+.image-interactive{
+    height: 200px;
+}

@@ -1,0 +1,7 @@
+.card-img {
+    height: 100%;
+    padding: 2rem;
+}
+.card-title{
+    text-transform: uppercase;
+}

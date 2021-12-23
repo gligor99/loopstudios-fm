@@ -1,0 +1,17 @@
+.card-container {
+  position: relative;
+}
+
+.card-title {
+  position: absolute;
+  bottom: 3rem;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 100;
+  font-size: 2rem;
+  color: var(--clr-white);
+  padding: 2rem;
+  background-color: black;
+  width: 100%;
+  line-break:strict ;
+}

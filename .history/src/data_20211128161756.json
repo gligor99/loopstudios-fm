@@ -1,0 +1,6 @@
+data = [
+    {
+        title: 'Deep Earth',
+        img: './assets/desktop/image-deep-earth.jpg'
+    }
+]

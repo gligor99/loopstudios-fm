@@ -1,0 +1,9 @@
+.footer-container {
+  background-color: var(--clr-black);
+  padding: 2rem 7rem 2rem 7rem;
+  display: flex;
+}
+.copy {
+  color: var(--clr-white);
+  font-family: 'Josefin Sans', sans-serif;
+}

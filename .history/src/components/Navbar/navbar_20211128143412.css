@@ -1,0 +1,21 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 1rem;
+    background-color: red;
+}
+img{
+    height: 30%;
+}
+ul{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+li{
+    list-style-type: none;
+    padding-right: 1rem;
+}

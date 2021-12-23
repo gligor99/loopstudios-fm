@@ -1,0 +1,33 @@
+.footer-container {
+  background-color: var(--clr-black);
+  padding: 3rem 7rem 3rem 7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.copy {
+  color: var(--clr-dark-gray);
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.links {
+  padding-top: 2rem;
+}
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.social {
+  padding-bottom: 2rem;
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-end;
+}
+.social-icon {
+  padding-left: 2rem;
+}

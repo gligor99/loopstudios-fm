@@ -1,0 +1,12 @@
+.card-container {
+
+}
+.card-img {
+    height: 100%;
+}
+.card-title{
+    text-transform: uppercase;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 100;
+    color: var(--clr-black);
+}

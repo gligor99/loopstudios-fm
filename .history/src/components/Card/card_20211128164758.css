@@ -1,0 +1,7 @@
+.card-container {
+position: relative;
+}
+
+.card-image {
+    height: 100%;
+}

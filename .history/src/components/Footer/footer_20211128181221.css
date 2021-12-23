@@ -1,0 +1,29 @@
+.footer-container {
+  background-color: var(--clr-black);
+  padding: 3rem 7rem 3rem 7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.copy {
+  color: var(--clr-dark-gray);
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.links {
+  padding-top: 2rem;
+}
+
+.social {
+    
+  padding-bottom: 2rem;
+  position: relative;
+  display: inline-block;
+  float: right;
+  text-decoration: none;
+}
+.social-icon {
+  padding-left: 2rem;
+}

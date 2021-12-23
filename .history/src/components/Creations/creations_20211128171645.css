@@ -1,0 +1,38 @@
+.creation-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 7rem;
+  padding-right: 7rem;
+  padding-bottom: 2rem;
+}
+
+.creation-title {
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+.creation-btn {
+  border: none;
+  background-color: var(--clr-black);
+  border: 2px solid black;
+  color: var(--clr-white);
+  text-transform: uppercase;
+  padding: 0 2rem 0 2rem;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+.creation-btn:hover {
+  background-color: var(--clr-white);
+  color: var(--clr-black);
+  border: 2px solid black;
+}
+
+.creation-cards {
+  padding: 0 7rem 0 7rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}

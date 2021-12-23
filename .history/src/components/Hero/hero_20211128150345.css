@@ -1,0 +1,7 @@
+.container {
+    position: relative;
+    background: url('../../assets/desktop/image-hero.jpg');
+    background-repeat: no-repeat;
+    width: 102%;
+    height: 500px;
+}

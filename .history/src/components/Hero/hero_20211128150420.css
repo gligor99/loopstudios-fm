@@ -1,0 +1,6 @@
+.container {
+    background: url('../../assets/desktop/image-hero.jpg');
+    background-repeat: no-repeat;
+    width: 2500px;
+    height: 500px;
+}

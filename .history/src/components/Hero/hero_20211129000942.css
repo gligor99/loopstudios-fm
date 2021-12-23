@@ -1,0 +1,34 @@
+.container {
+  background: url("../../assets/desktop/image-hero.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 500px;
+}
+.container-content {
+  display: flex;
+  margin-top: 5rem;
+  margin-left: 7rem;
+}
+
+.title {
+  border: 2px solid var(--clr-white);
+  padding: 2rem;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 3rem;
+  font-weight: 100;
+  letter-spacing: 0.2rem;
+  color: white;
+}
+
+@media screen and (max-width: 690px) {
+  .container-content {
+    margin-top: 5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .wrapper{
+    margin: 1rem;
+  }
+}

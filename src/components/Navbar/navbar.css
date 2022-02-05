@@ -1,56 +1,115 @@
-.wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin: auto;
-  padding: 2rem 7rem 2rem 7rem;
-  background-color: transparent;
-}
-img {
-  height: 1.5rem;
-}
-ul {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-evenly;
-}
+ul,
 li {
-  list-style-type: none;
-  padding-right: 1.5rem;
+  list-style: none;
 }
+
 a {
-  position: relative;
-  display: inline-block;
   text-decoration: none;
+}
+
+nav {
+  background: transparent;
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 7.5rem;
+}
+
+.nav-toggle {
+  font-size: 1.5rem;
   color: var(--clr-white);
+  background: transparent;
+  border-color: transparent;
+  transition: var(--transition);
+  cursor: pointer;
 }
-a:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 100%;
-  width: 0;
-  height: 1.8px;
+
+.nav-toggle:hover {
+  color: var(--clr-white);
+  transform: rotate(90deg);
+}
+
+.links {
   background-color: var(--clr-white);
-  transition: width 0.2s ease-in-out;
 }
-a:hover:after {
+
+.links a {
+  color: var(--clr-black);
+  font-size: 1rem;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  padding: 0.5rem 7.5rem;
+  transition: 0.3s all;
+}
+
+.links a:after {
+  content: "";
+  display: block;
+  width: 0;
+  border-bottom: 2px solid;
+  margin: 0 auto;
+  transition: all 0.3s linear 0s;
+}
+
+.links a:hover:after {
   width: 100%;
 }
 
-.burger-icon {
-  display: none;
+.links-container {
+  height: 0;
+  overflow: hidden;
+  transition: 0.3s all;
 }
 
-@media screen and (max-width: 850px) {
-  .nav-items {
+@media screen and (min-width: 850px) {
+  .nav-center {
+    height: 100%;
+    margin: 0 6.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  .nav-header {
+    padding: 1.5rem 0;
+  }
+
+  .nav-toggle {
     display: none;
   }
-  .burger-icon {
-    display: block;
+
+  .links-container {
+    height: auto !important;
   }
-  .burger-icon:hover {
-    cursor: pointer;
+
+  .links {
+    background-color: transparent;
+    display: flex;
+    justify-content: end;
+    align-self: center;
+  }
+
+  .links a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0;
+    margin: 0 0.5rem;
+    color: var(--clr-white);
+  }
+
+  .links a:after {
+    content: "";
+    display: block;
+    width: 0;
+    border-bottom: 2px solid;
+    margin: 0 auto;
+    transition: all 0.3s linear 0s;
+  }
+
+  .links a:hover:after {
+    width: 100%;
   }
 }

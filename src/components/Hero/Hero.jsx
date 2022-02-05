@@ -2,17 +2,17 @@ import React from "react";
 import Navbar from "../Navbar/Navbar";
 import "./hero.css";
 
-const Hero = ({toggle, setToggle}) => {
+const Hero = () => {
   return (
-      <div className="container">
-        <Navbar toggle={toggle} setToggle={setToggle} />
-        <div className="container-content">
-          <h1 className="title">
-            Immersive <br /> experiences <br />
-            that deliver
-          </h1>
-        </div>
+    <div className="container">
+      <Navbar />
+      <div className="container-content">
+        <h1 className="title">
+          Immersive <br /> experiences <br />
+          that deliver
+        </h1>
       </div>
+    </div>
   );
 };
 

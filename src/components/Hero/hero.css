@@ -1,25 +1,28 @@
 .container {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
   background: url("../../assets/desktop/image-hero.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  height: 500px;
 }
 .container-content {
   display: flex;
-  margin-top: 5rem;
-  margin-left: 7rem;
+  margin: auto 7.5rem;
 }
 
 .title {
+  align-self: center;
   border: 2px solid var(--clr-white);
-  padding: 2rem;
+  padding: 3rem;
   text-transform: uppercase;
   font-family: "Josefin Sans", sans-serif;
   font-size: 3rem;
   font-weight: 100;
-  letter-spacing: 0.2rem;
-  color: white;
+  letter-spacing: 0.5rem;
+  line-height: 1.25;
+  color: var(--clr-white);
 }
 
 @media screen and (max-width: 690px) {

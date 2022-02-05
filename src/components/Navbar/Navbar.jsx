@@ -1,30 +1,50 @@
-import logo from "../../assets/logo.svg";
-import hamburger from '../../assets/icon-hamburger.svg'
+import { useEffect, useRef, useState } from "react";
+import { FaBars } from "react-icons/fa";
 import "./navbar.css";
+import logo from "../../assets/logo.svg";
+import { links } from "./navData";
 
 const Navbar = () => {
+  const [showLinks, setShowLinks] = useState(false);
+  const linksContainerRef = useRef(null);
+  const linksRef = useRef(null);
+
+  useEffect(() => {
+    const linksHeight = linksRef.current.getBoundingClientRect().height;
+    if (showLinks) {
+      // linksContainerRef.current.style.backgroundColor = "#fff";
+      linksContainerRef.current.style.height = `${linksHeight}px`;
+    } else {
+      linksContainerRef.current.style.height = `0px`;
+    }
+  }, [showLinks]);
+
   return (
-    <div className="wrapper">
-      <img src={logo} alt="logo.svg" />
-      <img className="burger-icon" src={hamburger} alt="burgerIcon.svg" />
-      <ul className="nav-items">
-        <li>
-          <a href="/about">About</a>
-        </li>
-        <li>
-          <a href="/careers">Careers</a>
-        </li>
-        <li>
-          <a href="/events">Events</a>
-        </li>
-        <li>
-          <a href="/products">Products</a>
-        </li>
-        <li>
-          <a href="/support">Support</a>
-        </li>
-      </ul>
-    </div>
+    <nav>
+      <div className="nav-center">
+        <div className="nav-header">
+          <img src={logo} alt="logo" />
+          <button
+            className="nav-toggle"
+            onClick={() => setShowLinks(!showLinks)}
+          >
+            <FaBars />
+          </button>
+        </div>
+
+        <div className="links-container" ref={linksContainerRef}>
+          <ul className="links" ref={linksRef}>
+            {links.map((link) => {
+              return (
+                <li key={link.id}>
+                  <a href={link.url}>{link.text}</a>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      </div>
+    </nav>
   );
 };
 

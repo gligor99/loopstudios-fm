@@ -3,8 +3,9 @@
   padding: 3rem 7rem 3rem 7rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
 }
+
 .copy {
   color: var(--clr-dark-gray);
   font-family: "Josefin Sans", sans-serif;
@@ -12,8 +13,21 @@
   font-weight: 700;
 }
 
-.links {
+.links-footer {
+  display: flex;
+  justify-content: start;
+  align-self: flex-start;
   padding-top: 2rem;
+}
+
+.links-footer a {
+  padding: 0;
+  margin-right: 1rem;
+  color: var(--clr-white);
+}
+.links-footer a:hover {
+  padding: 0;
+  color: var(--clr-dark-gray);
 }
 
 .right-content {
@@ -37,12 +51,12 @@
     flex-direction: column;
     justify-content: center;
   }
-  
+
   .social {
     padding-top: 2rem;
     justify-content: center;
   }
-  .copy{
+  .copy {
     text-align: center;
   }
 }

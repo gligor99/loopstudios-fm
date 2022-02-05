@@ -6,7 +6,8 @@ const Card = ({ item }) => {
       className="card-container"
       style={{
         backgroundImage: `url(${item.img})`,
-        backgroundRepeat: "no-repeat"
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover"
       }}
     >
       <h4 className="card-title">{item.title}</h4>

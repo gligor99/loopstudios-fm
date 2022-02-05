@@ -33,7 +33,7 @@
 }
 
 .creation-cards {
-  padding: 0 5rem 0 5rem;
+  padding: 0 5rem 2.5rem 5rem;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -41,7 +41,7 @@
 }
 
 @media only screen and (max-width: 840px) {
-  .creation-header{
+  .creation-header {
     flex-direction: column;
     justify-content: center;
     align-items: flex-starst;

@@ -4,7 +4,7 @@
   transition: 0.2s ease-in;
   cursor: pointer;
   height: 500px;
-        width: 250px;
+  width: 20%;
 }
 
 .card-container:hover {
